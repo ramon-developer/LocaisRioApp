@@ -1,26 +1,545 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pZ5-K5-R9m">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Sofia Pro Extra Light.otf">
+            <string>SofiaPro-ExtraLight</string>
+        </array>
+        <array key="Sofia Pro Light.otf">
+            <string>SofiaPro-Light</string>
+        </array>
+        <array key="Sofia Pro Medium.otf">
+            <string>SofiaPro-Medium</string>
+        </array>
+        <array key="Sofia Pro Regular.otf">
+            <string>SofiaProRegular</string>
+        </array>
+        <array key="Sofia Pro Semi Bold.otf">
+            <string>SofiaPro-SemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="DNU-28-8Bq">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <navigationController id="pZ5-K5-R9m" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ySd-77-AvX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="IDK-p3-3Uh" kind="relationship" relationship="rootViewController" id="3Gy-ab-Q5n"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="auw-A4-7KK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-946" y="-3"/>
+        </scene>
+        <!--LocaisRio App-->
+        <scene sceneID="Yrn-ys-2Yx">
+            <objects>
+                <tableViewController storyboardIdentifier="tableVC" id="IDK-p3-3Uh" customClass="TableViewController" customModule="LocaisRioApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="351" sectionHeaderHeight="28" sectionFooterHeight="28" id="cTc-Xe-Aqp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="351" id="Hrg-5J-1W8" customClass="TableViewCell" customModule="LocaisRioApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="351"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hrg-5J-1W8" id="vVG-bo-NaU">
+                                    <frame key="frameInset" width="375" height="350.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3yv-pR-MKL"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Local:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yR-hd-p9H">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="69" id="jSJ-hT-K14"/>
+                                                <constraint firstAttribute="height" constant="20" id="xpa-Qu-0fU"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="SofiaProRegular" family="Sofia Pro" pointSize="15"/>
+                                            <color key="textColor" red="0.0013918749349999999" green="0.0043592389189999999" blue="0.0076693390050000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IcN-AE-Nek">
+                                            <fontDescription key="fontDescription" name="SofiaPro-Medium" family="Sofia Pro" pointSize="15"/>
+                                            <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bairro:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wah-1s-54M">
+                                            <fontDescription key="fontDescription" name="SofiaProRegular" family="Sofia Pro" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1aA-pB-7V2">
+                                            <fontDescription key="fontDescription" name="SofiaPro-Medium" family="Sofia Pro" pointSize="15"/>
+                                            <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Wah-1s-54M" firstAttribute="firstBaseline" secondItem="1aA-pB-7V2" secondAttribute="firstBaseline" id="3tI-0D-LcX"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Wah-1s-54M" secondAttribute="bottom" constant="21" id="4jR-ze-ESi"/>
+                                        <constraint firstItem="Wah-1s-54M" firstAttribute="baseline" secondItem="1aA-pB-7V2" secondAttribute="baseline" id="5sL-St-oZY"/>
+                                        <constraint firstItem="IcN-AE-Nek" firstAttribute="trailing" secondItem="1aA-pB-7V2" secondAttribute="trailing" id="7Yj-Be-Fdy"/>
+                                        <constraint firstItem="1yR-hd-p9H" firstAttribute="leading" secondItem="Wah-1s-54M" secondAttribute="leading" id="ZGB-ix-Th6"/>
+                                        <constraint firstItem="IcN-AE-Nek" firstAttribute="leading" secondItem="1aA-pB-7V2" secondAttribute="leading" id="ZYd-Wm-RyJ"/>
+                                        <constraint firstItem="Wah-1s-54M" firstAttribute="top" secondItem="3yv-pR-MKL" secondAttribute="bottom" constant="26" id="ZyT-z0-WEc"/>
+                                        <constraint firstItem="3yv-pR-MKL" firstAttribute="leading" secondItem="vVG-bo-NaU" secondAttribute="leadingMargin" id="cwM-xC-NrE"/>
+                                        <constraint firstItem="IcN-AE-Nek" firstAttribute="leading" secondItem="vVG-bo-NaU" secondAttribute="leadingMargin" constant="67" id="dkD-w3-sVQ"/>
+                                        <constraint firstItem="1yR-hd-p9H" firstAttribute="leading" secondItem="vVG-bo-NaU" secondAttribute="leadingMargin" constant="9" id="eA4-C7-zbr"/>
+                                        <constraint firstItem="3yv-pR-MKL" firstAttribute="trailing" secondItem="IcN-AE-Nek" secondAttribute="trailing" id="iuJ-Mw-MJU"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="1yR-hd-p9H" secondAttribute="bottom" constant="39" id="qsC-eb-BxO"/>
+                                        <constraint firstItem="3yv-pR-MKL" firstAttribute="trailing" secondItem="vVG-bo-NaU" secondAttribute="trailingMargin" id="raj-TK-PsD"/>
+                                        <constraint firstItem="1yR-hd-p9H" firstAttribute="top" secondItem="3yv-pR-MKL" secondAttribute="bottom" constant="8" symbolic="YES" id="rnc-eU-WXw"/>
+                                        <constraint firstItem="1yR-hd-p9H" firstAttribute="baseline" secondItem="IcN-AE-Nek" secondAttribute="baseline" id="tC7-6g-3GX"/>
+                                        <constraint firstItem="3yv-pR-MKL" firstAttribute="top" secondItem="vVG-bo-NaU" secondAttribute="topMargin" id="thJ-KB-50S"/>
+                                        <constraint firstItem="1yR-hd-p9H" firstAttribute="firstBaseline" secondItem="IcN-AE-Nek" secondAttribute="firstBaseline" id="ueJ-Jy-jma"/>
+                                        <constraint firstItem="1yR-hd-p9H" firstAttribute="trailing" secondItem="Wah-1s-54M" secondAttribute="trailing" id="uj7-p4-hjz"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="IDK-p3-3Uh" id="2Gl-8I-rBz"/>
+                            <outlet property="delegate" destination="IDK-p3-3Uh" id="gSD-9Q-7D1"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="LocaisRio App" id="kAU-dO-eNR">
+                        <barButtonItem key="backBarButtonItem" title="voltar" id="7DG-mR-ziU"/>
+                        <barButtonItem key="leftBarButtonItem" id="hSs-lO-ZWo">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dpK-7N-Cr3">
+                                <rect key="frame" x="16" y="10" width="18" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="icon5"/>
+                                <connections>
+                                    <action selector="showMap" destination="IDK-p3-3Uh" eventType="touchUpInside" id="EvW-Cu-Ybj"/>
+                                </connections>
+                            </button>
+                            <connections>
+                                <segue destination="ReM-35-jfs" kind="presentation" identifier="goToMap" id="qzl-7F-pzI"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="24C-ty-iwF">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="logoutTappedBotton:" destination="IDK-p3-3Uh" id="pgq-zl-Ne8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="_tableView" destination="cTc-Xe-Aqp" id="MYc-GD-A11"/>
+                        <segue destination="37P-jl-YPU" kind="presentation" identifier="loginView" id="OG2-at-BLQ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gct-xJ-CE8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-95" y="26"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="EdK-Lx-taI">
+            <objects>
+                <viewController id="ReM-35-jfs" customClass="MapViewController" customModule="LocaisRioApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8fk-vb-tAo"/>
+                        <viewControllerLayoutGuide type="bottom" id="e6u-q6-hbj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YpW-JR-hnC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sTT-s8-C3V"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meu Local" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEl-du-70l">
+                                <frame key="frameInset" minX="84" minY="20" width="190" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SofiaProRegular" family="Sofia Pro" pointSize="24"/>
+                                <color key="textColor" red="0.57647058819999997" green="0.78039215689999997" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qcu-fP-7C3">
+                                <frame key="frameInset" minX="16" minY="23" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="voltar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="pZ5-K5-R9m" kind="presentation" identifier="backToVC" id="ctn-2y-jg9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sTT-s8-C3V" secondAttribute="trailing" id="8Xp-1V-Jx6"/>
+                            <constraint firstItem="sTT-s8-C3V" firstAttribute="leading" secondItem="YpW-JR-hnC" secondAttribute="leading" id="iFB-LH-fsY"/>
+                            <constraint firstItem="sTT-s8-C3V" firstAttribute="bottom" secondItem="e6u-q6-hbj" secondAttribute="top" id="q5x-i9-uEp"/>
+                            <constraint firstItem="sTT-s8-C3V" firstAttribute="top" secondItem="8fk-vb-tAo" secondAttribute="bottom" constant="44" id="rFz-Xi-AuK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="sTT-s8-C3V" id="GYy-VB-12b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ab-9S-dUh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-95" y="-637"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="MTX-re-Baa">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="N6z-bE-Xfw" customClass="DetailViewController" customModule="LocaisRioApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qOl-a4-vgQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="RdF-ik-01X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7rT-JQ-8dZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nZc-xE-rAF"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9u-7E-LJ9">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="A3o-cj-Asa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SofiaPro-Light" family="Sofia Pro" pointSize="19"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALz-k7-19g" userLabel="Description Label">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="156" id="aEN-7E-uOF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SofiaPro-ExtraLight" family="Sofia Pro" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrição:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oha-O4-hxf">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="82" id="rcc-ii-N0r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SofiaPro-Light" family="Sofia Pro" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="x9u-7E-LJ9" firstAttribute="top" secondItem="nZc-xE-rAF" secondAttribute="bottom" constant="8" symbolic="YES" id="4RV-13-wrK"/>
+                            <constraint firstItem="x9u-7E-LJ9" firstAttribute="centerX" secondItem="nZc-xE-rAF" secondAttribute="centerX" id="6R4-ow-Uwl"/>
+                            <constraint firstAttribute="trailing" secondItem="nZc-xE-rAF" secondAttribute="trailing" id="BPn-TB-lza"/>
+                            <constraint firstItem="x9u-7E-LJ9" firstAttribute="leading" secondItem="7rT-JQ-8dZ" secondAttribute="leadingMargin" id="KiZ-8Z-5ks"/>
+                            <constraint firstAttribute="bottom" secondItem="x9u-7E-LJ9" secondAttribute="bottom" constant="269" id="LQg-K3-xNL"/>
+                            <constraint firstItem="ALz-k7-19g" firstAttribute="top" secondItem="oha-O4-hxf" secondAttribute="bottom" constant="8" symbolic="YES" id="Nj3-dL-DWf"/>
+                            <constraint firstItem="ALz-k7-19g" firstAttribute="leading" secondItem="7rT-JQ-8dZ" secondAttribute="leadingMargin" constant="13" id="RlV-D8-gaz"/>
+                            <constraint firstItem="nZc-xE-rAF" firstAttribute="top" secondItem="qOl-a4-vgQ" secondAttribute="bottom" id="Tb0-E5-lwP"/>
+                            <constraint firstItem="nZc-xE-rAF" firstAttribute="leading" secondItem="7rT-JQ-8dZ" secondAttribute="leading" id="e7O-Xm-b18"/>
+                            <constraint firstItem="oha-O4-hxf" firstAttribute="top" secondItem="x9u-7E-LJ9" secondAttribute="bottom" constant="8" symbolic="YES" id="j4i-kf-fFQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ALz-k7-19g" secondAttribute="trailing" constant="48" id="nH8-5w-IvG"/>
+                            <constraint firstItem="oha-O4-hxf" firstAttribute="leading" secondItem="7rT-JQ-8dZ" secondAttribute="leadingMargin" constant="9" id="yaB-DQ-rTZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="ALz-k7-19g" id="QA0-rW-tMd"/>
+                        <outlet property="imgView" destination="nZc-xE-rAF" id="OKd-gA-lQh"/>
+                        <outlet property="nameLabel" destination="x9u-7E-LJ9" id="tOy-Vg-Mb8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GoJ-UX-apt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="577" y="26"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="dad-47-XfQ">
+            <objects>
+                <viewController id="GmU-Ju-nf2" customClass="RegisterViewController" customModule="LocaisRioApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Adx-dd-J7T"/>
+                        <viewControllerLayoutGuide type="bottom" id="nn4-o5-VqE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rwR-dX-xG1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg3" highlightedImage="bg3" translatesAutoresizingMaskIntoConstraints="NO" id="LOr-O0-ale"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xcc-4N-HXY">
+                                <fontDescription key="fontDescription" name="SofiaProRegular" family="Sofia Pro" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insira seu e-mail" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="WN0-to-7tr">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XWS-Wf-YOn"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="SofiaPro-Light" family="Sofia Pro" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senha:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2H-rN-7Vr">
+                                <fontDescription key="fontDescription" name="SofiaProRegular" family="Sofia Pro" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite uma senha" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7x7-qq-PWw">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YB4-Jq-Jvv"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="SofiaPro-Light" family="Sofia Pro" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repita a senha:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvD-N3-TWj">
+                                <fontDescription key="fontDescription" name="SofiaProRegular" family="Sofia Pro" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite a senha novamente" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bQH-R2-ryq">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CPN-2K-vBa"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="SofiaPro-Light" family="Sofia Pro" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsV-UB-JpI">
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="SofiaPro-Medium" family="Sofia Pro" pointSize="17"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Registrar">
+                                    <color key="titleShadowColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerButtonTapped:" destination="GmU-Ju-nf2" eventType="touchUpInside" id="Yun-Pl-aDK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHv-2P-GR7">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="tpy-01-nzl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SofiaPro-Medium" family="Sofia Pro" pointSize="15"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
+                                <state key="normal" title="Já possuo uma conta, leve-me ao Login.">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="backLoginButton:" destination="GmU-Ju-nf2" eventType="touchUpInside" id="4tV-gT-lxv"/>
+                                    <segue destination="37P-jl-YPU" kind="presentation" identifier="segue_to_login" modalTransitionStyle="flipHorizontal" id="Isj-Tj-9QR"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="pdb-su-qoT">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="O2I-Nn-56r"/>
+                                    <constraint firstAttribute="width" constant="120" id="xcv-Dz-sF0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registre-se" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CI-7H-Cyb">
+                                <fontDescription key="fontDescription" name="SofiaPro-SemiBold" family="Sofia Pro" pointSize="34"/>
+                                <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="w2H-rN-7Vr" firstAttribute="trailing" secondItem="7x7-qq-PWw" secondAttribute="trailing" id="0mg-QN-4qc"/>
+                            <constraint firstItem="pdb-su-qoT" firstAttribute="top" secondItem="Adx-dd-J7T" secondAttribute="bottom" constant="8" symbolic="YES" id="1Xi-76-rkx"/>
+                            <constraint firstItem="fsV-UB-JpI" firstAttribute="centerX" secondItem="aHv-2P-GR7" secondAttribute="centerX" id="4DX-9v-lTA"/>
+                            <constraint firstItem="0CI-7H-Cyb" firstAttribute="top" secondItem="pdb-su-qoT" secondAttribute="bottom" constant="17" id="4Wc-qd-QQe"/>
+                            <constraint firstItem="fsV-UB-JpI" firstAttribute="top" secondItem="bQH-R2-ryq" secondAttribute="bottom" constant="29" id="7Ns-U8-bw8"/>
+                            <constraint firstItem="Xcc-4N-HXY" firstAttribute="centerX" secondItem="0CI-7H-Cyb" secondAttribute="centerX" id="83H-gQ-Guy"/>
+                            <constraint firstItem="yvD-N3-TWj" firstAttribute="trailing" secondItem="bQH-R2-ryq" secondAttribute="trailing" id="BZm-Ge-Xjk"/>
+                            <constraint firstItem="Xcc-4N-HXY" firstAttribute="leading" secondItem="w2H-rN-7Vr" secondAttribute="leading" id="CI8-AV-Xug"/>
+                            <constraint firstItem="pdb-su-qoT" firstAttribute="trailing" secondItem="LOr-O0-ale" secondAttribute="trailing" id="Cqa-3Z-sID"/>
+                            <constraint firstItem="w2H-rN-7Vr" firstAttribute="top" secondItem="WN0-to-7tr" secondAttribute="bottom" constant="27" id="Crb-5e-26F"/>
+                            <constraint firstItem="WN0-to-7tr" firstAttribute="leading" secondItem="rwR-dX-xG1" secondAttribute="leadingMargin" constant="45" id="Dd2-c9-yvz"/>
+                            <constraint firstItem="WN0-to-7tr" firstAttribute="centerX" secondItem="aHv-2P-GR7" secondAttribute="centerX" id="Fa6-tn-Fv8"/>
+                            <constraint firstItem="Xcc-4N-HXY" firstAttribute="trailing" secondItem="w2H-rN-7Vr" secondAttribute="trailing" id="HUh-cd-459"/>
+                            <constraint firstItem="yvD-N3-TWj" firstAttribute="leading" secondItem="bQH-R2-ryq" secondAttribute="leading" id="Iaw-Fm-CMa"/>
+                            <constraint firstItem="7x7-qq-PWw" firstAttribute="trailing" secondItem="yvD-N3-TWj" secondAttribute="trailing" id="JIz-zn-QvF"/>
+                            <constraint firstItem="7x7-qq-PWw" firstAttribute="leading" secondItem="yvD-N3-TWj" secondAttribute="leading" id="Mqf-QK-gOv"/>
+                            <constraint firstItem="aHv-2P-GR7" firstAttribute="leading" secondItem="rwR-dX-xG1" secondAttribute="leadingMargin" id="OVa-v7-Ayc"/>
+                            <constraint firstItem="WN0-to-7tr" firstAttribute="trailing" secondItem="fsV-UB-JpI" secondAttribute="trailing" id="V3l-FV-TRj"/>
+                            <constraint firstItem="nn4-o5-VqE" firstAttribute="top" secondItem="aHv-2P-GR7" secondAttribute="bottom" constant="133" id="WhJ-sl-e2f"/>
+                            <constraint firstItem="LOr-O0-ale" firstAttribute="top" secondItem="rwR-dX-xG1" secondAttribute="top" id="XuU-gR-cvS"/>
+                            <constraint firstItem="aHv-2P-GR7" firstAttribute="top" secondItem="fsV-UB-JpI" secondAttribute="bottom" constant="19" id="cL6-Ki-NRj"/>
+                            <constraint firstItem="LOr-O0-ale" firstAttribute="top" secondItem="rwR-dX-xG1" secondAttribute="top" id="de0-zv-tjp"/>
+                            <constraint firstItem="w2H-rN-7Vr" firstAttribute="leading" secondItem="7x7-qq-PWw" secondAttribute="leading" id="eD7-Md-6ys"/>
+                            <constraint firstItem="LOr-O0-ale" firstAttribute="leading" secondItem="rwR-dX-xG1" secondAttribute="leading" id="eG6-1R-PE1"/>
+                            <constraint firstItem="bQH-R2-ryq" firstAttribute="top" secondItem="yvD-N3-TWj" secondAttribute="bottom" constant="10" id="elP-3l-Dsp"/>
+                            <constraint firstItem="7x7-qq-PWw" firstAttribute="top" secondItem="w2H-rN-7Vr" secondAttribute="bottom" constant="8" symbolic="YES" id="ftv-CT-cyW"/>
+                            <constraint firstItem="nn4-o5-VqE" firstAttribute="top" secondItem="LOr-O0-ale" secondAttribute="bottom" id="j87-IX-qzm"/>
+                            <constraint firstAttribute="trailing" secondItem="LOr-O0-ale" secondAttribute="trailing" id="meP-9u-2i9"/>
+                            <constraint firstItem="nn4-o5-VqE" firstAttribute="top" secondItem="LOr-O0-ale" secondAttribute="bottom" id="mhU-gj-7zn"/>
+                            <constraint firstItem="WN0-to-7tr" firstAttribute="centerX" secondItem="LOr-O0-ale" secondAttribute="centerX" id="uti-Fw-YEd"/>
+                            <constraint firstItem="bQH-R2-ryq" firstAttribute="centerX" secondItem="fsV-UB-JpI" secondAttribute="centerX" id="vjq-RP-Hgz"/>
+                            <constraint firstItem="WN0-to-7tr" firstAttribute="top" secondItem="Xcc-4N-HXY" secondAttribute="bottom" constant="8" symbolic="YES" id="wuA-tO-V35"/>
+                            <constraint firstItem="yvD-N3-TWj" firstAttribute="top" secondItem="7x7-qq-PWw" secondAttribute="bottom" constant="25" id="xGn-4i-ouv"/>
+                            <constraint firstAttribute="trailing" secondItem="LOr-O0-ale" secondAttribute="trailing" id="xZ2-hY-I1m"/>
+                            <constraint firstItem="LOr-O0-ale" firstAttribute="leading" secondItem="rwR-dX-xG1" secondAttribute="leading" id="xaA-Hb-kMd"/>
+                            <constraint firstItem="bQH-R2-ryq" firstAttribute="leading" secondItem="fsV-UB-JpI" secondAttribute="leading" id="xrN-2h-T2N"/>
+                            <constraint firstItem="Xcc-4N-HXY" firstAttribute="top" secondItem="0CI-7H-Cyb" secondAttribute="bottom" constant="26" id="yzS-93-On6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="repeatPasswordTextField" destination="bQH-R2-ryq" id="hoM-Ta-c13"/>
+                        <outlet property="userEmailTextField" destination="WN0-to-7tr" id="lZ7-pG-hyG"/>
+                        <outlet property="userPasswordTextField" destination="7x7-qq-PWw" id="c8s-af-M2g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="87e-1x-vQB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="577" y="696"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="Zrj-b1-VCZ">
+            <objects>
+                <viewController id="37P-jl-YPU" customClass="LoginViewController" customModule="LocaisRioApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AgG-fa-7aE"/>
+                        <viewControllerLayoutGuide type="bottom" id="a0u-LS-SOp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B5q-tn-vRg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.94999998807907104" contentMode="scaleToFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="gpc-Y6-JQs"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="cnF-2p-HG5">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="oCs-eU-jTi"/>
+                                    <constraint firstAttribute="width" constant="126" id="sTz-Gk-u5E"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKT-eb-o7x">
+                                <fontDescription key="fontDescription" name="SofiaPro-SemiBold" family="Sofia Pro" pointSize="34"/>
+                                <color key="textColor" red="0.57647058819999997" green="0.78039215689999997" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47X-Xj-BUO">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="143" id="lpX-G4-kSN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SofiaProRegular" family="Sofia Pro" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="digite o e-mail cadastrado" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="mEt-Np-cgM">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9WM-vt-Mvd"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="SofiaPro-Light" family="Sofia Pro" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senha:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7z-dC-nA6">
+                                <fontDescription key="fontDescription" name="SofiaProRegular" family="Sofia Pro" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insira sua senha" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jeO-WM-hxT">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="pBf-AX-jW9"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="SofiaPro-Light" family="Sofia Pro" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obT-HT-FTk">
+                                <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="y48-qh-Eic"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SofiaPro-Medium" family="Sofia Pro" pointSize="17"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Entrar">
+                                    <color key="titleShadowColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="DoLogin:" destination="37P-jl-YPU" eventType="touchUpInside" id="YqB-Ce-mXx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ainda não possui uma conta ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JbP-08-704">
+                                <fontDescription key="fontDescription" name="SofiaPro-Light" family="Sofia Pro" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uf1-hX-IJH">
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="SofiaPro-Medium" family="Sofia Pro" pointSize="17"/>
+                                <color key="tintColor" red="0.0013918749349999999" green="0.0043592389189999999" blue="0.0076693390050000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Registre-se">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerButtonTapped:" destination="37P-jl-YPU" eventType="touchUpInside" id="VOU-Uc-Wxc"/>
+                                    <segue destination="GmU-Ju-nf2" kind="presentation" identifier="segue_to_register" modalTransitionStyle="flipHorizontal" id="xIo-aP-u7B"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qKT-eb-o7x" firstAttribute="leading" secondItem="B5q-tn-vRg" secondAttribute="leadingMargin" constant="80" id="0M7-TA-nov"/>
+                            <constraint firstItem="mEt-Np-cgM" firstAttribute="trailing" secondItem="W7z-dC-nA6" secondAttribute="trailing" id="2Kn-Wo-e7q"/>
+                            <constraint firstItem="obT-HT-FTk" firstAttribute="top" secondItem="jeO-WM-hxT" secondAttribute="bottom" constant="45" id="3Oe-No-OY5"/>
+                            <constraint firstItem="qKT-eb-o7x" firstAttribute="centerX" secondItem="mEt-Np-cgM" secondAttribute="centerX" id="45R-xg-nHj"/>
+                            <constraint firstItem="cnF-2p-HG5" firstAttribute="top" secondItem="AgG-fa-7aE" secondAttribute="bottom" constant="8" symbolic="YES" id="6Rc-QM-Ur0"/>
+                            <constraint firstItem="W7z-dC-nA6" firstAttribute="trailing" secondItem="jeO-WM-hxT" secondAttribute="trailing" id="Edv-Mq-AFH"/>
+                            <constraint firstItem="gpc-Y6-JQs" firstAttribute="bottom" secondItem="a0u-LS-SOp" secondAttribute="top" id="HGI-2R-NCD"/>
+                            <constraint firstItem="gpc-Y6-JQs" firstAttribute="top" secondItem="B5q-tn-vRg" secondAttribute="top" id="HMw-o4-EHK"/>
+                            <constraint firstItem="W7z-dC-nA6" firstAttribute="leading" secondItem="jeO-WM-hxT" secondAttribute="leading" id="I1m-7i-XSd"/>
+                            <constraint firstItem="a0u-LS-SOp" firstAttribute="top" secondItem="Uf1-hX-IJH" secondAttribute="bottom" constant="146" id="IF1-v0-R1H"/>
+                            <constraint firstItem="qKT-eb-o7x" firstAttribute="top" secondItem="cnF-2p-HG5" secondAttribute="bottom" constant="11" id="M9z-BH-ivp"/>
+                            <constraint firstItem="mEt-Np-cgM" firstAttribute="leading" secondItem="W7z-dC-nA6" secondAttribute="leading" id="QYe-Gs-Ngu"/>
+                            <constraint firstItem="gpc-Y6-JQs" firstAttribute="leading" secondItem="B5q-tn-vRg" secondAttribute="leading" id="T3s-sD-6x1"/>
+                            <constraint firstItem="obT-HT-FTk" firstAttribute="leading" secondItem="JbP-08-704" secondAttribute="leading" id="UOQ-WT-acm"/>
+                            <constraint firstItem="jeO-WM-hxT" firstAttribute="top" secondItem="W7z-dC-nA6" secondAttribute="bottom" constant="8" symbolic="YES" id="Wxw-dn-tUr"/>
+                            <constraint firstItem="Uf1-hX-IJH" firstAttribute="top" secondItem="JbP-08-704" secondAttribute="bottom" constant="21" id="cA3-Uf-65P"/>
+                            <constraint firstItem="cnF-2p-HG5" firstAttribute="trailing" secondItem="gpc-Y6-JQs" secondAttribute="trailing" id="cIY-uV-o48"/>
+                            <constraint firstItem="jeO-WM-hxT" firstAttribute="leading" secondItem="obT-HT-FTk" secondAttribute="leading" id="czk-gh-mFw"/>
+                            <constraint firstItem="JbP-08-704" firstAttribute="top" secondItem="obT-HT-FTk" secondAttribute="bottom" constant="33" id="d0e-w7-X8j"/>
+                            <constraint firstItem="47X-Xj-BUO" firstAttribute="leading" secondItem="mEt-Np-cgM" secondAttribute="leading" id="dx3-8M-eXH"/>
+                            <constraint firstItem="W7z-dC-nA6" firstAttribute="top" secondItem="mEt-Np-cgM" secondAttribute="bottom" constant="24" id="egG-VD-dF2"/>
+                            <constraint firstItem="47X-Xj-BUO" firstAttribute="leading" secondItem="B5q-tn-vRg" secondAttribute="leadingMargin" constant="7" id="ghV-cu-HgU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mEt-Np-cgM" secondAttribute="trailing" constant="15" id="hQc-nu-gcd"/>
+                            <constraint firstItem="47X-Xj-BUO" firstAttribute="top" secondItem="qKT-eb-o7x" secondAttribute="bottom" constant="17" id="hvY-Js-4lY"/>
+                            <constraint firstItem="mEt-Np-cgM" firstAttribute="top" secondItem="47X-Xj-BUO" secondAttribute="bottom" constant="8" symbolic="YES" id="idI-EL-bg2"/>
+                            <constraint firstItem="Uf1-hX-IJH" firstAttribute="leading" secondItem="B5q-tn-vRg" secondAttribute="leading" constant="24" id="imH-bT-bm5"/>
+                            <constraint firstAttribute="trailing" secondItem="gpc-Y6-JQs" secondAttribute="trailing" id="kNb-hf-GXy"/>
+                            <constraint firstItem="obT-HT-FTk" firstAttribute="trailing" secondItem="JbP-08-704" secondAttribute="trailing" id="lwP-DY-SlS"/>
+                            <constraint firstItem="jeO-WM-hxT" firstAttribute="trailing" secondItem="obT-HT-FTk" secondAttribute="trailing" id="tlG-59-1Xx"/>
+                            <constraint firstAttribute="trailing" secondItem="Uf1-hX-IJH" secondAttribute="trailing" constant="31" id="zlc-79-9gu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="login_button" destination="obT-HT-FTk" id="D1n-7G-ddc"/>
+                        <outlet property="password_input" destination="jeO-WM-hxT" id="YD2-KU-uYS"/>
+                        <outlet property="username_input" destination="mEt-Np-cgM" id="qIV-bd-44W"/>
+                        <segue destination="IDK-p3-3Uh" kind="presentation" identifier="segue_to_vc" id="OP3-Ib-LBU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0bA-9b-Mnb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-95.200000000000003" y="694.90254872563719"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg3" width="750" height="1334"/>
+        <image name="icon5" width="352" height="504"/>
+        <image name="logo" width="177" height="106"/>
+        <image name="wallpaper" width="736" height="1306"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="3Gy-ab-Q5n"/>
+        <segue reference="OG2-at-BLQ"/>
+    </inferredMetricsTieBreakers>
 </document>

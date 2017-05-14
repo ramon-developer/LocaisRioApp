@@ -41,5 +41,25 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Permitir ler os dados do GPS ?</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Sofia Pro Black.oft</string>
+		<string>Sofia Pro Bold.oft</string>
+		<string>Sofia Pro Extra.oft</string>
+		<string>Sofia Pro Light.oft</string>
+		<string>Sofia Pro Medium.oft</string>
+		<string>Sofia Pro Regular.oft</string>
+		<string>Sofia Pro Semi Bold.oft</string>
+		<string>Sofia Pro Ultra Light.oft</string>
+	</array>
+	<key>CFBundleDisplayName</key>
+	<string>LocaisRioApp</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>

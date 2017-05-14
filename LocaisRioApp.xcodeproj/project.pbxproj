@@ -14,6 +14,51 @@
 		88DFB2D61EC8024600C14E27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88DFB2D41EC8024600C14E27 /* LaunchScreen.storyboard */; };
 		88DFB2E11EC8024600C14E27 /* LocaisRioAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DFB2E01EC8024600C14E27 /* LocaisRioAppTests.swift */; };
 		88DFB2EC1EC8024600C14E27 /* LocaisRioAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DFB2EB1EC8024600C14E27 /* LocaisRioAppUITests.swift */; };
+		88DFB2FF1EC804C600C14E27 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DFB2FE1EC804C600C14E27 /* DetailViewController.swift */; };
+		88DFB3001EC804C600C14E27 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DFB2FE1EC804C600C14E27 /* DetailViewController.swift */; };
+		88DFB3011EC804C600C14E27 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DFB2FE1EC804C600C14E27 /* DetailViewController.swift */; };
+		88DFB3031EC804FC00C14E27 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DFB3021EC804FC00C14E27 /* LoginViewController.swift */; };
+		88DFB3041EC804FC00C14E27 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DFB3021EC804FC00C14E27 /* LoginViewController.swift */; };
+		88DFB3051EC804FC00C14E27 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DFB3021EC804FC00C14E27 /* LoginViewController.swift */; };
+		88DFB3071EC8051100C14E27 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DFB3061EC8051100C14E27 /* RegisterViewController.swift */; };
+		88DFB3081EC8051100C14E27 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DFB3061EC8051100C14E27 /* RegisterViewController.swift */; };
+		88DFB3091EC8051100C14E27 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DFB3061EC8051100C14E27 /* RegisterViewController.swift */; };
+		88DFB30B1EC8052A00C14E27 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DFB30A1EC8052A00C14E27 /* MapViewController.swift */; };
+		88DFB30C1EC8052A00C14E27 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DFB30A1EC8052A00C14E27 /* MapViewController.swift */; };
+		88DFB30D1EC8052A00C14E27 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DFB30A1EC8052A00C14E27 /* MapViewController.swift */; };
+		88DFB30F1EC8056A00C14E27 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DFB30E1EC8056A00C14E27 /* Model.swift */; };
+		88DFB3101EC8056A00C14E27 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DFB30E1EC8056A00C14E27 /* Model.swift */; };
+		88DFB3111EC8056A00C14E27 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DFB30E1EC8056A00C14E27 /* Model.swift */; };
+		88DFB3131EC8059200C14E27 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DFB3121EC8059200C14E27 /* TableViewCell.swift */; };
+		88DFB3141EC8059200C14E27 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DFB3121EC8059200C14E27 /* TableViewCell.swift */; };
+		88DFB3151EC8059200C14E27 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DFB3121EC8059200C14E27 /* TableViewCell.swift */; };
+		88DFB3171EC805B400C14E27 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DFB3161EC805B400C14E27 /* TableViewController.swift */; };
+		88DFB3181EC805B400C14E27 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DFB3161EC805B400C14E27 /* TableViewController.swift */; };
+		88DFB3191EC805B400C14E27 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DFB3161EC805B400C14E27 /* TableViewController.swift */; };
+		88DFB3281EC8071800C14E27 /* Sofia Pro Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88DFB3201EC8071800C14E27 /* Sofia Pro Black.otf */; };
+		88DFB3291EC8071800C14E27 /* Sofia Pro Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88DFB3201EC8071800C14E27 /* Sofia Pro Black.otf */; };
+		88DFB32A1EC8071800C14E27 /* Sofia Pro Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88DFB3201EC8071800C14E27 /* Sofia Pro Black.otf */; };
+		88DFB32B1EC8071800C14E27 /* Sofia Pro Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88DFB3211EC8071800C14E27 /* Sofia Pro Bold.otf */; };
+		88DFB32C1EC8071800C14E27 /* Sofia Pro Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88DFB3211EC8071800C14E27 /* Sofia Pro Bold.otf */; };
+		88DFB32D1EC8071800C14E27 /* Sofia Pro Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88DFB3211EC8071800C14E27 /* Sofia Pro Bold.otf */; };
+		88DFB32E1EC8071800C14E27 /* Sofia Pro Extra Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88DFB3221EC8071800C14E27 /* Sofia Pro Extra Light.otf */; };
+		88DFB32F1EC8071800C14E27 /* Sofia Pro Extra Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88DFB3221EC8071800C14E27 /* Sofia Pro Extra Light.otf */; };
+		88DFB3301EC8071800C14E27 /* Sofia Pro Extra Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88DFB3221EC8071800C14E27 /* Sofia Pro Extra Light.otf */; };
+		88DFB3311EC8071800C14E27 /* Sofia Pro Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88DFB3231EC8071800C14E27 /* Sofia Pro Light.otf */; };
+		88DFB3321EC8071800C14E27 /* Sofia Pro Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88DFB3231EC8071800C14E27 /* Sofia Pro Light.otf */; };
+		88DFB3331EC8071800C14E27 /* Sofia Pro Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88DFB3231EC8071800C14E27 /* Sofia Pro Light.otf */; };
+		88DFB3341EC8071800C14E27 /* Sofia Pro Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88DFB3241EC8071800C14E27 /* Sofia Pro Medium.otf */; };
+		88DFB3351EC8071800C14E27 /* Sofia Pro Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88DFB3241EC8071800C14E27 /* Sofia Pro Medium.otf */; };
+		88DFB3361EC8071800C14E27 /* Sofia Pro Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88DFB3241EC8071800C14E27 /* Sofia Pro Medium.otf */; };
+		88DFB3371EC8071800C14E27 /* Sofia Pro Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88DFB3251EC8071800C14E27 /* Sofia Pro Regular.otf */; };
+		88DFB3381EC8071800C14E27 /* Sofia Pro Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88DFB3251EC8071800C14E27 /* Sofia Pro Regular.otf */; };
+		88DFB3391EC8071800C14E27 /* Sofia Pro Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88DFB3251EC8071800C14E27 /* Sofia Pro Regular.otf */; };
+		88DFB33A1EC8071800C14E27 /* Sofia Pro Semi Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88DFB3261EC8071800C14E27 /* Sofia Pro Semi Bold.otf */; };
+		88DFB33B1EC8071800C14E27 /* Sofia Pro Semi Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88DFB3261EC8071800C14E27 /* Sofia Pro Semi Bold.otf */; };
+		88DFB33C1EC8071800C14E27 /* Sofia Pro Semi Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88DFB3261EC8071800C14E27 /* Sofia Pro Semi Bold.otf */; };
+		88DFB33D1EC8071800C14E27 /* Sofia Pro Ultra Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88DFB3271EC8071800C14E27 /* Sofia Pro Ultra Light.otf */; };
+		88DFB33E1EC8071800C14E27 /* Sofia Pro Ultra Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88DFB3271EC8071800C14E27 /* Sofia Pro Ultra Light.otf */; };
+		88DFB33F1EC8071800C14E27 /* Sofia Pro Ultra Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 88DFB3271EC8071800C14E27 /* Sofia Pro Ultra Light.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +92,21 @@
 		88DFB2E71EC8024600C14E27 /* LocaisRioAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocaisRioAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88DFB2EB1EC8024600C14E27 /* LocaisRioAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaisRioAppUITests.swift; sourceTree = "<group>"; };
 		88DFB2ED1EC8024600C14E27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88DFB2FE1EC804C600C14E27 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		88DFB3021EC804FC00C14E27 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		88DFB3061EC8051100C14E27 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		88DFB30A1EC8052A00C14E27 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		88DFB30E1EC8056A00C14E27 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		88DFB3121EC8059200C14E27 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		88DFB3161EC805B400C14E27 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		88DFB3201EC8071800C14E27 /* Sofia Pro Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Sofia Pro Black.otf"; path = "Fonts/Sofia Pro Black.otf"; sourceTree = "<group>"; };
+		88DFB3211EC8071800C14E27 /* Sofia Pro Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Sofia Pro Bold.otf"; path = "Fonts/Sofia Pro Bold.otf"; sourceTree = "<group>"; };
+		88DFB3221EC8071800C14E27 /* Sofia Pro Extra Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Sofia Pro Extra Light.otf"; path = "Fonts/Sofia Pro Extra Light.otf"; sourceTree = "<group>"; };
+		88DFB3231EC8071800C14E27 /* Sofia Pro Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Sofia Pro Light.otf"; path = "Fonts/Sofia Pro Light.otf"; sourceTree = "<group>"; };
+		88DFB3241EC8071800C14E27 /* Sofia Pro Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Sofia Pro Medium.otf"; path = "Fonts/Sofia Pro Medium.otf"; sourceTree = "<group>"; };
+		88DFB3251EC8071800C14E27 /* Sofia Pro Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Sofia Pro Regular.otf"; path = "Fonts/Sofia Pro Regular.otf"; sourceTree = "<group>"; };
+		88DFB3261EC8071800C14E27 /* Sofia Pro Semi Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Sofia Pro Semi Bold.otf"; path = "Fonts/Sofia Pro Semi Bold.otf"; sourceTree = "<group>"; };
+		88DFB3271EC8071800C14E27 /* Sofia Pro Ultra Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Sofia Pro Ultra Light.otf"; path = "Fonts/Sofia Pro Ultra Light.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +157,13 @@
 		88DFB2CA1EC8024600C14E27 /* LocaisRioApp */ = {
 			isa = PBXGroup;
 			children = (
-				88DFB2CB1EC8024600C14E27 /* AppDelegate.swift */,
-				88DFB2CD1EC8024600C14E27 /* ViewController.swift */,
-				88DFB2CF1EC8024600C14E27 /* Main.storyboard */,
+				88DFB2FA1EC803A500C14E27 /* System */,
+				88DFB2FD1EC803B000C14E27 /* Fonts */,
+				88DFB2FC1EC803AC00C14E27 /* View */,
+				88DFB2FB1EC803A900C14E27 /* Controller */,
+				88DFB2F91EC8038300C14E27 /* Model */,
 				88DFB2D21EC8024600C14E27 /* Assets.xcassets */,
 				88DFB2D41EC8024600C14E27 /* LaunchScreen.storyboard */,
-				88DFB2D71EC8024600C14E27 /* Info.plist */,
 			);
 			path = LocaisRioApp;
 			sourceTree = "<group>";
@@ -123,6 +184,60 @@
 				88DFB2ED1EC8024600C14E27 /* Info.plist */,
 			);
 			path = LocaisRioAppUITests;
+			sourceTree = "<group>";
+		};
+		88DFB2F91EC8038300C14E27 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88DFB30E1EC8056A00C14E27 /* Model.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		88DFB2FA1EC803A500C14E27 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				88DFB2CB1EC8024600C14E27 /* AppDelegate.swift */,
+				88DFB2D71EC8024600C14E27 /* Info.plist */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		88DFB2FB1EC803A900C14E27 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				88DFB3021EC804FC00C14E27 /* LoginViewController.swift */,
+				88DFB3061EC8051100C14E27 /* RegisterViewController.swift */,
+				88DFB2CD1EC8024600C14E27 /* ViewController.swift */,
+				88DFB2FE1EC804C600C14E27 /* DetailViewController.swift */,
+				88DFB30A1EC8052A00C14E27 /* MapViewController.swift */,
+				88DFB3161EC805B400C14E27 /* TableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		88DFB2FC1EC803AC00C14E27 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				88DFB3121EC8059200C14E27 /* TableViewCell.swift */,
+				88DFB2CF1EC8024600C14E27 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		88DFB2FD1EC803B000C14E27 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				88DFB3201EC8071800C14E27 /* Sofia Pro Black.otf */,
+				88DFB3211EC8071800C14E27 /* Sofia Pro Bold.otf */,
+				88DFB3221EC8071800C14E27 /* Sofia Pro Extra Light.otf */,
+				88DFB3231EC8071800C14E27 /* Sofia Pro Light.otf */,
+				88DFB3241EC8071800C14E27 /* Sofia Pro Medium.otf */,
+				88DFB3251EC8071800C14E27 /* Sofia Pro Regular.otf */,
+				88DFB3261EC8071800C14E27 /* Sofia Pro Semi Bold.otf */,
+				88DFB3271EC8071800C14E27 /* Sofia Pro Ultra Light.otf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,7 +303,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Ebix American Latin";
 				TargetAttributes = {
 					88DFB2C71EC8024600C14E27 = {
@@ -233,8 +348,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				88DFB2D61EC8024600C14E27 /* LaunchScreen.storyboard in Resources */,
-				88DFB2D31EC8024600C14E27 /* Assets.xcassets in Resources */,
 				88DFB2D11EC8024600C14E27 /* Main.storyboard in Resources */,
+				88DFB2D31EC8024600C14E27 /* Assets.xcassets in Resources */,
+				88DFB3371EC8071800C14E27 /* Sofia Pro Regular.otf in Resources */,
+				88DFB3281EC8071800C14E27 /* Sofia Pro Black.otf in Resources */,
+				88DFB33A1EC8071800C14E27 /* Sofia Pro Semi Bold.otf in Resources */,
+				88DFB32E1EC8071800C14E27 /* Sofia Pro Extra Light.otf in Resources */,
+				88DFB33D1EC8071800C14E27 /* Sofia Pro Ultra Light.otf in Resources */,
+				88DFB32B1EC8071800C14E27 /* Sofia Pro Bold.otf in Resources */,
+				88DFB3311EC8071800C14E27 /* Sofia Pro Light.otf in Resources */,
+				88DFB3341EC8071800C14E27 /* Sofia Pro Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +365,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88DFB32F1EC8071800C14E27 /* Sofia Pro Extra Light.otf in Resources */,
+				88DFB3321EC8071800C14E27 /* Sofia Pro Light.otf in Resources */,
+				88DFB33B1EC8071800C14E27 /* Sofia Pro Semi Bold.otf in Resources */,
+				88DFB33E1EC8071800C14E27 /* Sofia Pro Ultra Light.otf in Resources */,
+				88DFB3351EC8071800C14E27 /* Sofia Pro Medium.otf in Resources */,
+				88DFB3291EC8071800C14E27 /* Sofia Pro Black.otf in Resources */,
+				88DFB32C1EC8071800C14E27 /* Sofia Pro Bold.otf in Resources */,
+				88DFB3381EC8071800C14E27 /* Sofia Pro Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +380,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88DFB3301EC8071800C14E27 /* Sofia Pro Extra Light.otf in Resources */,
+				88DFB3331EC8071800C14E27 /* Sofia Pro Light.otf in Resources */,
+				88DFB33C1EC8071800C14E27 /* Sofia Pro Semi Bold.otf in Resources */,
+				88DFB33F1EC8071800C14E27 /* Sofia Pro Ultra Light.otf in Resources */,
+				88DFB3361EC8071800C14E27 /* Sofia Pro Medium.otf in Resources */,
+				88DFB32A1EC8071800C14E27 /* Sofia Pro Black.otf in Resources */,
+				88DFB32D1EC8071800C14E27 /* Sofia Pro Bold.otf in Resources */,
+				88DFB3391EC8071800C14E27 /* Sofia Pro Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +398,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88DFB30F1EC8056A00C14E27 /* Model.swift in Sources */,
+				88DFB3131EC8059200C14E27 /* TableViewCell.swift in Sources */,
+				88DFB3031EC804FC00C14E27 /* LoginViewController.swift in Sources */,
+				88DFB30B1EC8052A00C14E27 /* MapViewController.swift in Sources */,
+				88DFB3071EC8051100C14E27 /* RegisterViewController.swift in Sources */,
+				88DFB2FF1EC804C600C14E27 /* DetailViewController.swift in Sources */,
 				88DFB2CE1EC8024600C14E27 /* ViewController.swift in Sources */,
+				88DFB3171EC805B400C14E27 /* TableViewController.swift in Sources */,
 				88DFB2CC1EC8024600C14E27 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +414,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88DFB3041EC804FC00C14E27 /* LoginViewController.swift in Sources */,
 				88DFB2E11EC8024600C14E27 /* LocaisRioAppTests.swift in Sources */,
+				88DFB3001EC804C600C14E27 /* DetailViewController.swift in Sources */,
+				88DFB3181EC805B400C14E27 /* TableViewController.swift in Sources */,
+				88DFB3101EC8056A00C14E27 /* Model.swift in Sources */,
+				88DFB30C1EC8052A00C14E27 /* MapViewController.swift in Sources */,
+				88DFB3141EC8059200C14E27 /* TableViewCell.swift in Sources */,
+				88DFB3081EC8051100C14E27 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +429,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88DFB3051EC804FC00C14E27 /* LoginViewController.swift in Sources */,
 				88DFB2EC1EC8024600C14E27 /* LocaisRioAppUITests.swift in Sources */,
+				88DFB3011EC804C600C14E27 /* DetailViewController.swift in Sources */,
+				88DFB3191EC805B400C14E27 /* TableViewController.swift in Sources */,
+				88DFB3111EC8056A00C14E27 /* Model.swift in Sources */,
+				88DFB30D1EC8052A00C14E27 /* MapViewController.swift in Sources */,
+				88DFB3151EC8059200C14E27 /* TableViewCell.swift in Sources */,
+				88DFB3091EC8051100C14E27 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +493,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -383,6 +544,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -505,6 +667,7 @@
 				88DFB2F21EC8024600C14E27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88DFB2F31EC8024600C14E27 /* Build configuration list for PBXNativeTarget "LocaisRioAppTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +676,7 @@
 				88DFB2F51EC8024600C14E27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88DFB2F61EC8024600C14E27 /* Build configuration list for PBXNativeTarget "LocaisRioAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +685,7 @@
 				88DFB2F81EC8024600C14E27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
