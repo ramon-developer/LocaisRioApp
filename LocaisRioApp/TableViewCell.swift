@@ -22,19 +22,7 @@ class TableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
-    }
-    
-    //activity indicator
-    func showActivityIndicatory(imgView: UIImageView) {
-        let activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
-        activityIndicator.center = imgView.center
-        activityIndicator.hidesWhenStopped = true
-        activityIndicator.activityIndicatorViewStyle =
-            UIActivityIndicatorViewStyle.whiteLarge
-        imgView.addSubview(activityIndicator)
-        activityIndicator.startAnimating()
     }
     
 }

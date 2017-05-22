@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pZ5-K5-R9m">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pZ5-K5-R9m">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -29,7 +32,7 @@
         <scene sceneID="DNU-28-8Bq">
             <objects>
                 <navigationController id="pZ5-K5-R9m" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ySd-77-AvX">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ySd-77-AvX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -40,26 +43,34 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="auw-A4-7KK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-946" y="-3"/>
+            <point key="canvasLocation" x="-895" y="26"/>
         </scene>
         <!--LocaisRio App-->
         <scene sceneID="Yrn-ys-2Yx">
             <objects>
-                <tableViewController storyboardIdentifier="tableVC" id="IDK-p3-3Uh" customClass="TableViewController" customModule="LocaisRioApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="351" sectionHeaderHeight="28" sectionFooterHeight="28" id="cTc-Xe-Aqp">
+                <tableViewController storyboardIdentifier="tableVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IDK-p3-3Uh" customClass="TableViewController" customModule="LocaisRioApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="351" sectionHeaderHeight="28" sectionFooterHeight="28" id="cTc-Xe-Aqp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" id="xGM-9u-Nh8">
+                            <rect key="frame" x="0.0" y="379" width="375" height="37"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <color key="color" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                        </activityIndicatorView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="351" id="Hrg-5J-1W8" customClass="TableViewCell" customModule="LocaisRioApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="375" height="351"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="351"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hrg-5J-1W8" id="vVG-bo-NaU">
-                                    <frame key="frameInset" width="375" height="350.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="351"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3yv-pR-MKL"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3yv-pR-MKL">
+                                            <rect key="frame" x="8" y="8" width="359" height="268"/>
+                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Local:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yR-hd-p9H">
+                                            <rect key="frame" x="17" y="284" width="69" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="69" id="jSJ-hT-K14"/>
                                                 <constraint firstAttribute="height" constant="20" id="xpa-Qu-0fU"/>
@@ -69,16 +80,19 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IcN-AE-Nek">
+                                            <rect key="frame" x="75" y="284" width="292" height="20"/>
                                             <fontDescription key="fontDescription" name="SofiaPro-Medium" family="Sofia Pro" pointSize="15"/>
                                             <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bairro:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wah-1s-54M">
+                                            <rect key="frame" x="17" y="302" width="69" height="20"/>
                                             <fontDescription key="fontDescription" name="SofiaProRegular" family="Sofia Pro" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1aA-pB-7V2">
+                                            <rect key="frame" x="75" y="302" width="292" height="20"/>
                                             <fontDescription key="fontDescription" name="SofiaPro-Medium" family="Sofia Pro" pointSize="15"/>
                                             <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -105,6 +119,12 @@
                                         <constraint firstItem="1yR-hd-p9H" firstAttribute="trailing" secondItem="Wah-1s-54M" secondAttribute="trailing" id="uj7-p4-hjz"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="districtLabel" destination="1aA-pB-7V2" id="8EJ-h2-cVi"/>
+                                    <outlet property="imgView" destination="3yv-pR-MKL" id="8VB-Xj-tNd"/>
+                                    <outlet property="nameLabel" destination="IcN-AE-Nek" id="2Dk-6X-9ww"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -113,7 +133,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="LocaisRio App" id="kAU-dO-eNR">
-                        <barButtonItem key="backBarButtonItem" title="voltar" id="7DG-mR-ziU"/>
+                        <barButtonItem key="backBarButtonItem" title="voltar" id="7DG-mR-ziU">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
                         <barButtonItem key="leftBarButtonItem" id="hSs-lO-ZWo">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dpK-7N-Cr3">
                                 <rect key="frame" x="16" y="10" width="18" height="24"/>
@@ -123,9 +145,7 @@
                                     <action selector="showMap" destination="IDK-p3-3Uh" eventType="touchUpInside" id="EvW-Cu-Ybj"/>
                                 </connections>
                             </button>
-                            <connections>
-                                <segue destination="ReM-35-jfs" kind="presentation" identifier="goToMap" id="qzl-7F-pzI"/>
-                            </connections>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="stop" id="24C-ty-iwF">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -135,7 +155,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="_tableView" destination="cTc-Xe-Aqp" id="MYc-GD-A11"/>
+                        <outlet property="activityIndicator" destination="xGM-9u-Nh8" id="qdl-BP-LDH"/>
+                        <outlet property="myTableView" destination="cTc-Xe-Aqp" id="1R0-8b-ES6"/>
                         <segue destination="37P-jl-YPU" kind="presentation" identifier="loginView" id="OG2-at-BLQ"/>
                     </connections>
                 </tableViewController>
@@ -146,7 +167,7 @@
         <!--Map View Controller-->
         <scene sceneID="EdK-Lx-taI">
             <objects>
-                <viewController id="ReM-35-jfs" customClass="MapViewController" customModule="LocaisRioApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapViewController" id="ReM-35-jfs" customClass="MapViewController" customModule="LocaisRioApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8fk-vb-tAo"/>
                         <viewControllerLayoutGuide type="bottom" id="e6u-q6-hbj"/>
@@ -155,16 +176,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sTT-s8-C3V"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sTT-s8-C3V">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meu Local" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEl-du-70l">
-                                <frame key="frameInset" minX="84" minY="20" width="190" height="36"/>
+                                <rect key="frame" x="84" y="20" width="190" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SofiaProRegular" family="Sofia Pro" pointSize="24"/>
                                 <color key="textColor" red="0.57647058819999997" green="0.78039215689999997" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qcu-fP-7C3">
-                                <frame key="frameInset" minX="16" minY="23" width="46" height="30"/>
+                                <rect key="frame" x="16" y="23" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="voltar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -188,7 +211,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ab-9S-dUh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-95" y="-637"/>
+            <point key="canvasLocation" x="-116" y="-739"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="MTX-re-Baa">
@@ -202,8 +225,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nZc-xE-rAF"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nZc-xE-rAF">
+                                <rect key="frame" x="0.0" y="20" width="375" height="329"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9u-7E-LJ9">
+                                <rect key="frame" x="16" y="357" width="343" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="A3o-cj-Asa"/>
                                 </constraints>
@@ -212,6 +238,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALz-k7-19g" userLabel="Description Label">
+                                <rect key="frame" x="29" y="429" width="282" height="156"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="156" id="aEN-7E-uOF"/>
                                 </constraints>
@@ -220,6 +247,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrição:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oha-O4-hxf">
+                                <rect key="frame" x="25" y="406" width="82" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="82" id="rcc-ii-N0r"/>
                                 </constraints>
@@ -252,7 +280,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GoJ-UX-apt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="577" y="26"/>
+            <point key="canvasLocation" x="727" y="26"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="dad-47-XfQ">
@@ -266,13 +294,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg3" highlightedImage="bg3" translatesAutoresizingMaskIntoConstraints="NO" id="LOr-O0-ale"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg3" highlightedImage="bg3" translatesAutoresizingMaskIntoConstraints="NO" id="LOr-O0-ale">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xcc-4N-HXY">
+                                <rect key="frame" x="27" y="192.5" width="321" height="17"/>
                                 <fontDescription key="fontDescription" name="SofiaProRegular" family="Sofia Pro" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insira seu e-mail" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="WN0-to-7tr">
+                                <rect key="frame" x="27" y="217.5" width="321" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="XWS-Wf-YOn"/>
                                 </constraints>
@@ -281,11 +313,13 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senha:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2H-rN-7Vr">
+                                <rect key="frame" x="27" y="274.5" width="321" height="17"/>
                                 <fontDescription key="fontDescription" name="SofiaProRegular" family="Sofia Pro" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite uma senha" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7x7-qq-PWw">
+                                <rect key="frame" x="27" y="299.5" width="321" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="YB4-Jq-Jvv"/>
                                 </constraints>
@@ -294,11 +328,13 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repita a senha:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvD-N3-TWj">
+                                <rect key="frame" x="27" y="354.5" width="321" height="17"/>
                                 <fontDescription key="fontDescription" name="SofiaProRegular" family="Sofia Pro" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite a senha novamente" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bQH-R2-ryq">
+                                <rect key="frame" x="27" y="381.5" width="321" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="CPN-2K-vBa"/>
                                 </constraints>
@@ -307,6 +343,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsV-UB-JpI">
+                                <rect key="frame" x="27" y="440.5" width="321" height="47.5"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="SofiaPro-Medium" family="Sofia Pro" pointSize="17"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -319,6 +356,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHv-2P-GR7">
+                                <rect key="frame" x="16" y="507" width="343" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="27" id="tpy-01-nzl"/>
                                 </constraints>
@@ -334,12 +372,14 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="pdb-su-qoT">
+                                <rect key="frame" x="255" y="28" width="120" height="73"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="73" id="O2I-Nn-56r"/>
                                     <constraint firstAttribute="width" constant="120" id="xcv-Dz-sF0"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registre-se" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CI-7H-Cyb">
+                                <rect key="frame" x="97" y="118" width="179.5" height="48.5"/>
                                 <fontDescription key="fontDescription" name="SofiaPro-SemiBold" family="Sofia Pro" pointSize="34"/>
                                 <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -359,7 +399,7 @@
                             <constraint firstItem="Xcc-4N-HXY" firstAttribute="leading" secondItem="w2H-rN-7Vr" secondAttribute="leading" id="CI8-AV-Xug"/>
                             <constraint firstItem="pdb-su-qoT" firstAttribute="trailing" secondItem="LOr-O0-ale" secondAttribute="trailing" id="Cqa-3Z-sID"/>
                             <constraint firstItem="w2H-rN-7Vr" firstAttribute="top" secondItem="WN0-to-7tr" secondAttribute="bottom" constant="27" id="Crb-5e-26F"/>
-                            <constraint firstItem="WN0-to-7tr" firstAttribute="leading" secondItem="rwR-dX-xG1" secondAttribute="leadingMargin" constant="45" id="Dd2-c9-yvz"/>
+                            <constraint firstItem="WN0-to-7tr" firstAttribute="leading" secondItem="rwR-dX-xG1" secondAttribute="leadingMargin" constant="11" id="Dd2-c9-yvz"/>
                             <constraint firstItem="WN0-to-7tr" firstAttribute="centerX" secondItem="aHv-2P-GR7" secondAttribute="centerX" id="Fa6-tn-Fv8"/>
                             <constraint firstItem="Xcc-4N-HXY" firstAttribute="trailing" secondItem="w2H-rN-7Vr" secondAttribute="trailing" id="HUh-cd-459"/>
                             <constraint firstItem="yvD-N3-TWj" firstAttribute="leading" secondItem="bQH-R2-ryq" secondAttribute="leading" id="Iaw-Fm-CMa"/>
@@ -396,7 +436,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="87e-1x-vQB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="577" y="696"/>
+            <point key="canvasLocation" x="726" y="735"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="Zrj-b1-VCZ">
@@ -410,14 +450,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.94999998807907104" contentMode="scaleToFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="gpc-Y6-JQs"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.94999998807907104" contentMode="scaleToFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="gpc-Y6-JQs">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="cnF-2p-HG5">
+                                <rect key="frame" x="249" y="28" width="126" height="73"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="73" id="oCs-eU-jTi"/>
                                     <constraint firstAttribute="width" constant="126" id="sTz-Gk-u5E"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKT-eb-o7x">
+                                <rect key="frame" x="96" y="112" width="175" height="48.5"/>
                                 <fontDescription key="fontDescription" name="SofiaPro-SemiBold" family="Sofia Pro" pointSize="34"/>
                                 <color key="textColor" red="0.57647058819999997" green="0.78039215689999997" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -425,6 +469,7 @@
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47X-Xj-BUO">
+                                <rect key="frame" x="23" y="177.5" width="143" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="143" id="lpX-G4-kSN"/>
                                 </constraints>
@@ -433,6 +478,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="digite o e-mail cadastrado" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="mEt-Np-cgM">
+                                <rect key="frame" x="23" y="202.5" width="321" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="9WM-vt-Mvd"/>
                                 </constraints>
@@ -441,11 +487,13 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Senha:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7z-dC-nA6">
+                                <rect key="frame" x="23" y="256.5" width="321" height="17"/>
                                 <fontDescription key="fontDescription" name="SofiaProRegular" family="Sofia Pro" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insira sua senha" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jeO-WM-hxT">
+                                <rect key="frame" x="23" y="281.5" width="321" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="pBf-AX-jW9"/>
                                 </constraints>
@@ -454,6 +502,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obT-HT-FTk">
+                                <rect key="frame" x="23" y="356.5" width="321" height="46"/>
                                 <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="y48-qh-Eic"/>
@@ -465,15 +514,17 @@
                                     <color key="titleShadowColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="DoLogin:" destination="37P-jl-YPU" eventType="touchUpInside" id="YqB-Ce-mXx"/>
+                                    <action selector="loginButtonTapped:" destination="37P-jl-YPU" eventType="touchUpInside" id="WOG-Bp-DSP"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ainda não possui uma conta ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JbP-08-704">
+                                <rect key="frame" x="23" y="435.5" width="321" height="17"/>
                                 <fontDescription key="fontDescription" name="SofiaPro-Light" family="Sofia Pro" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uf1-hX-IJH">
+                                <rect key="frame" x="24" y="473.5" width="320" height="47.5"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="SofiaPro-Medium" family="Sofia Pro" pointSize="17"/>
                                 <color key="tintColor" red="0.0013918749349999999" green="0.0043592389189999999" blue="0.0076693390050000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -481,7 +532,6 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="registerButtonTapped:" destination="37P-jl-YPU" eventType="touchUpInside" id="VOU-Uc-Wxc"/>
                                     <segue destination="GmU-Ju-nf2" kind="presentation" identifier="segue_to_register" modalTransitionStyle="flipHorizontal" id="xIo-aP-u7B"/>
                                 </connections>
                             </button>
@@ -521,15 +571,14 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="login_button" destination="obT-HT-FTk" id="D1n-7G-ddc"/>
-                        <outlet property="password_input" destination="jeO-WM-hxT" id="YD2-KU-uYS"/>
-                        <outlet property="username_input" destination="mEt-Np-cgM" id="qIV-bd-44W"/>
+                        <outlet property="userEmailTextField" destination="mEt-Np-cgM" id="e6K-Hr-P6k"/>
+                        <outlet property="userPasswordTextField" destination="jeO-WM-hxT" id="kQ3-DE-aYj"/>
                         <segue destination="IDK-p3-3Uh" kind="presentation" identifier="segue_to_vc" id="OP3-Ib-LBU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0bA-9b-Mnb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-95.200000000000003" y="694.90254872563719"/>
+            <point key="canvasLocation" x="-95" y="736"/>
         </scene>
     </scenes>
     <resources>
@@ -539,7 +588,7 @@
         <image name="wallpaper" width="736" height="1306"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3Gy-ab-Q5n"/>
+        <segue reference="OP3-Ib-LBU"/>
         <segue reference="OG2-at-BLQ"/>
     </inferredMetricsTieBreakers>
 </document>

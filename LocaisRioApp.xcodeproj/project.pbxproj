@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		88DFB2CC1EC8024600C14E27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DFB2CB1EC8024600C14E27 /* AppDelegate.swift */; };
-		88DFB2CE1EC8024600C14E27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DFB2CD1EC8024600C14E27 /* ViewController.swift */; };
 		88DFB2D11EC8024600C14E27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88DFB2CF1EC8024600C14E27 /* Main.storyboard */; };
 		88DFB2D31EC8024600C14E27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88DFB2D21EC8024600C14E27 /* Assets.xcassets */; };
 		88DFB2D61EC8024600C14E27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88DFB2D41EC8024600C14E27 /* LaunchScreen.storyboard */; };
@@ -81,7 +80,6 @@
 /* Begin PBXFileReference section */
 		88DFB2C81EC8024600C14E27 /* LocaisRioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocaisRioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88DFB2CB1EC8024600C14E27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		88DFB2CD1EC8024600C14E27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		88DFB2D01EC8024600C14E27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88DFB2D21EC8024600C14E27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88DFB2D51EC8024600C14E27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -208,7 +206,6 @@
 			children = (
 				88DFB3021EC804FC00C14E27 /* LoginViewController.swift */,
 				88DFB3061EC8051100C14E27 /* RegisterViewController.swift */,
-				88DFB2CD1EC8024600C14E27 /* ViewController.swift */,
 				88DFB2FE1EC804C600C14E27 /* DetailViewController.swift */,
 				88DFB30A1EC8052A00C14E27 /* MapViewController.swift */,
 				88DFB3161EC805B400C14E27 /* TableViewController.swift */,
@@ -404,7 +401,6 @@
 				88DFB30B1EC8052A00C14E27 /* MapViewController.swift in Sources */,
 				88DFB3071EC8051100C14E27 /* RegisterViewController.swift in Sources */,
 				88DFB2FF1EC804C600C14E27 /* DetailViewController.swift in Sources */,
-				88DFB2CE1EC8024600C14E27 /* ViewController.swift in Sources */,
 				88DFB3171EC805B400C14E27 /* TableViewController.swift in Sources */,
 				88DFB2CC1EC8024600C14E27 /* AppDelegate.swift in Sources */,
 			);

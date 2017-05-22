@@ -13,22 +13,18 @@ class TableViewController: UITableViewController {
     
     final let urlString = "http://demo3842168.mockable.io/LocaisRioApp/API/Places"
     
-    @IBOutlet weak var _tableView: UITableView!
-    //@IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet var myTableView: UITableView!
     
     var placeArray = [Place]()
     
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.downloadJsonWithURL()
         // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+         self.clearsSelectionOnViewWillAppear = false
         
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     
     override func didReceiveMemoryWarning() {
@@ -52,10 +48,8 @@ class TableViewController: UITableViewController {
         
         UserDefaults.standard.set(true, forKey: "isUserLoggedIn")
         UserDefaults.standard.synchronize()
-        
         self.performSegue(withIdentifier: "loginView", sender: self)
     }
-    
     
     // MARK: - Table view data source
     
@@ -102,7 +96,8 @@ class TableViewController: UITableViewController {
                             self.placeArray.append(Place(name: nameStr, district: districtStr, img: imgStr, description: descriptionStr))
                             
                             OperationQueue.main.addOperation({
-                                self.tableView.reloadData()
+                                self.myTableView.reloadData()
+                                self.activityIndicator.startAnimating()
                             })
                         }
                     }
@@ -130,10 +125,14 @@ class TableViewController: UITableViewController {
         return placeArray.count
     }
     
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return placeArray.count
+    }
+    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
         
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
         let place = placeArray[indexPath.row]
         let imgURL = NSURL(string: place.imageStr)
         
@@ -146,8 +145,8 @@ class TableViewController: UITableViewController {
         }
         
         return cell
+        
     }
-    
     
     //mostra a próxima tela detalhada
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -165,10 +164,9 @@ class TableViewController: UITableViewController {
     
     //método para visualizar o mapa
     @IBAction func showMap() {
-        let vcMap = MapViewController(nibName: "MapViewController", bundle: nil)
-        self.navigationController!.pushViewController(vcMap, animated: true)
+        let vcMap = storyboard?.instantiateViewController(withIdentifier: "MapViewController")
+        self.navigationController!.pushViewController(vcMap!, animated: true)
     }
-    
     
     
 }

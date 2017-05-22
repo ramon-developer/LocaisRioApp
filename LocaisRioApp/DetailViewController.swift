@@ -9,12 +9,8 @@
 import UIKit
 
 
-
-
-
 class DetailViewController: UIViewController {
 
-    
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!

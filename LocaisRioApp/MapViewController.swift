@@ -12,10 +12,11 @@ import CoreLocation
 
 class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
 
-    
     @IBOutlet weak var mapView: MKMapView!
     
+    
     let locationManager = CLLocationManager()
+
     
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -33,7 +34,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     }
     
     override func viewDidDisappear(_ animated: Bool) {
-        //destrutor: desliga o monitoramento
+        //destrutor: desliga o monitoramento do GPS
         self.locationManager.stopUpdatingLocation()
     }
 
